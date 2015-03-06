@@ -72,7 +72,7 @@ nav li {
   float: left;
   display: inline-block;
   width: 33.3%;
-  border: 1px solid orange;
+  border: 1px solid #a93f35;
   padding: .5em;
   text-align: center;
   margin: 0;
@@ -165,6 +165,10 @@ div {
   overflow: hidden; /* Remind the element to wrap its floated children */
   padding-bottom: 20px;
   width: 100%;
+}
+
+main {
+  padding-top: 20px;
 }
 
 main h1 {
