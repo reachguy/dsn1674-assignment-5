@@ -7,19 +7,30 @@ html {
 }
 
 header {
-  background-color: #d05c2e;
+  background-color: #cd5b34;
   padding-top; .5em;
   overflow: hidden;
 }
 
-h1 {
-
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-  margin: 0.1;
-  padding-bottom; .1em;
+.grain-left {
+  width: 7%;
+  float: left;
+  margin: .5;
+  margin-top: .9em;
 }
+.grain-right {
+  width: 7%;
+  float: right;
+  margin-top: .9em;
+}
+
+h1 {
+  text-align: center;
+  margin: .1;
+  color: white;
+  padding-bottom: .1em;
+}
+
 
 h2 {
   background-color: #dc8252;
@@ -27,6 +38,8 @@ h2 {
   padding: 20px;
   color: white;
   margin: 0;
+  clear: right;
+  width: 100%;
 }
 
 h3 {
@@ -43,54 +56,65 @@ p {
   line-height: 1.5em;
 }
 
-ol {
-  list-style-type: none;
-  font-family: serif;
-  list-style-type: none;
-  background-color: #d05c2e;
-  display: block;
-  padding: 0;
-}
-
-nav ol {
-  list-style-type: none;
-  padding: 0;
+nav ol{
+  overflow: hidden;
   margin: 0;
-  text-align: center;
+  width: 100%;
+  padding: 0;
 }
 
 nav {
   text-align: center;
-  display: inline-block;
+  display: block;
 }
 
 nav li {
+  float: left;
   display: inline-block;
-  width: 33.3;
-  text-align: center;
+  width: 33.3%;
   border: 1px solid orange;
+  padding: .5em;
+  text-align: center;
+  margin: 0;
 }
 
 nav a {
-  display: inline-block;
-  width: 33.3%;
-  padding: 0.5em 0.75em;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  margin: 0 0 0.2em 0;
-  text-align: center;
 }
 
-nav a:hover {
-  background-color: #cc3865;
+nav li:hover {
+  background-color: #a93f35;
 }
 
-ul {
-  float: left;
-  width: 33%;
+.fl-container {
+  display:block;
+  width: 100%;
   list-style: none;
   padding: 15px;
+  -webkit-padding-start: 0;
+}
+
+.fl-container li {
+  display: block;
+  clear: both;
+}
+
+.peanuts,
+.beans,
+.lentils {
+  width: 30%;
+  float:left;
+  margin-bottom:2em;
+}
+
+
+
+.fl-container p {
+  width: 65%;
+  float: right;
+  margin: 0;
+  margin-left: 5%;
 }
 
 .inset-left {
@@ -140,20 +164,10 @@ div {
   background-color: #dc8252;
   overflow: hidden; /* Remind the element to wrap its floated children */
   padding-bottom: 20px;
+  width: 100%;
 }
 
-main {
-  background-color: red;
-  float: left;
-  /*width: calc(75% - 2rem);*/
-  width: 75%;
-  padding: 1rem;
-}
-
-aside {
-  background-color: green;
-  float: left;
-  /*width: calc(25% - 2rem);*/
-  width: 25%;
-  padding: 1rem;
+main h1 {
+  color: #e0a998;
+  font-size: 1em;
 }
